@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recharged</title>
+    <link href="https://fonts.googleapis.com/css?family=Inter:600" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:500" rel="stylesheet" type="text/css" />
+  </head>
+  <style>
+    body { margin: 0}
+    .email h1, .email h2, .email h3, .email h4, .email h5, .email h6 {
+      color: #000;
+      font-weight: 600;
+    }
+    .email a {
+      color: #000;
+    }
+    .email {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      color: #EBEBEB;
+      font-family: Iter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    .email header {
+      padding: 28px 32px 24px 32px;
+      gap: 10px;
+      border-bottom:1px solid #EBEBEB;
+    }
+    .email main {
+      padding: 32px 32px 40px 32px;
+      gap: 12px;
+      color: #828282;
+    }
+    .email footer {
+      background-color: #000;
+      gap: 24px;
+      padding: 28px 32px 32px 32px;
+    }
+    .email footer a {
+      color: #fff;
+    }
+    .email .container {max-width: 800px; margin: 0 auto;}
+
+    .email .btn {
+      margin: 5px;
+    }
+
+    .email .logo {
+      border-radius: 10px;
+      max-width: 500px;
+      max-height:125px;
+      object-fit: contain;
+    }
+    .email footer .logo {
+      max-height: 80px;
+    }
+  </style>
+  <body>
+    <div class="email">
+      <header>
+        <div class="container">
+          <img src="https://media.dealermasters.com/Recharged/Recharged_footer_logo_vertical1.webp" class="logo" />
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <div id="content"></div>
+        </div>
+      </main>
+      <footer>
+        <div class="container">
+          <img src="https://media.dealermasters.com/Recharged/Recharged_footer_logo.webp" class="logo" />
+          <p>You can unsubscribe from these emails <a href="{unsubscribeLink}">here</a></p>
+          <p>Copyright © 2023, All Rights Reserved</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
