@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>QoreAI</title>
+  <meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0">
+  <style>
+    html,
+    body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      gap: 2rem;
+    }
+
+    .btn {
+      margin: 5px;
+    }
+
+    .logo {
+      border-radius: 10px;
+      max-width: 500px;
+      width: 60%;
+      object-fit: contain;
+    }
+    .customer-logo {
+     max-width: 333px;
+     width: 40%;
+     object-fit: contain;
+    }
+  </style>
+</head>
+
+<body>
+   <img class="customer-logo" src="https://www.penfed.org/content/dam/penfedbtp/uploadedimages/Campaigns(1)/2016_-_Q1_Year_To_Shine/logo.png" />
+  <img class="logo" src="https://stage-demo.qoreai.com/QoreAI-Logo.jpg" />
+  <script data-integrator-id="94912ca163b9400dadc15849333b98e2" id="_kzsc" src="https://stage.qoreai.com/cs/qoreai.js"></script>
+</body>
+
+</html>
