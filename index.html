@@ -32,6 +32,19 @@
 <body>
   <img class="logo" src="https://stage-demo.qoreai.com/QoreAI-Logo.jpg" />
   <script data-integrator-id="a8eee4718ab74ed0b2223024d49620cc" id="_kzsc" src="https://stage.qoreai.com/cs/qoreai.js"></script>
+  <script>
+    const checkChatAvailable = () => {
+      if (!window?.QoreAI?.execute) {
+        window.setTimeout(() => {
+          checkChatAvailable();
+        }, 100);
+      } else {
+        window.QoreAI.execute();
+      }
+    };
+    
+    checkChatAvailable();
+  </script>
 </body>
 
 </html>
