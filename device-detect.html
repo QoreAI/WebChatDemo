@@ -3,18 +3,26 @@
     <title>Detect Device</title>
     <script async src="https://theapicompany.com/deviceAPI2.js?id=deviceAPI-tu7jprhcib"></script>
     <script>
-      function deviceAPIcallback (result) {
-        result = {...result, ...navigator};
+      function writeData(obj) {
         const ele = document.getElementById('data');
-        const keys = Object.keys(result);
+        const keys = Object.keys(obj);
         for(let i = 0; i < keys.length; i++) {
           const key = keys[i];
-          const val = result[key];
+          const val = obj[key];
           const newEle = document.createElement('div');
           const content = document.createTextNode(`${key} ${val}`);
           newEle.appendChild(content);
           ele.appendChild(newEle);
         }
+      }
+      
+      function deviceAPIcallback (result) {
+        writeData(result);
+        let navData = {};
+        for (let i in navigator) {
+          navData[i] = navigator[i];
+        }
+        writeData(navData);
       };
     </script>
   </head>
